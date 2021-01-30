@@ -30,11 +30,11 @@ public class ShortestPathInUWGraph {
     }
 
     public static void main(String[] args) {
-        int V = 4;
-        boolean visited[]=new boolean[V];
-        ArrayList<ArrayList<Integer> > adj = new ArrayList<ArrayList<Integer>>(V);
+        int v = 4;
+        boolean visited[]=new boolean[v];
+        ArrayList<ArrayList<Integer> > adj = new ArrayList<ArrayList<Integer>>(v);
 
-        for (int i = 0; i < V; i++)
+        for (int i = 0; i < v; i++)
             adj.add(new ArrayList<Integer>());
 
         Graph.addEdge(adj,0,1);
@@ -42,7 +42,7 @@ public class ShortestPathInUWGraph {
         Graph.addEdge(adj,2,3);
         Graph.addEdge(adj,0,2);
         Graph.addEdge(adj,1,3);
-        shortestpath(adj,V,0,visited);
+        shortestpath(adj,v,0,visited);
 
     }
 }
