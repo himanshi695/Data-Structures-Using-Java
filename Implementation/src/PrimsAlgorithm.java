@@ -11,7 +11,7 @@ public class PrimsAlgorithm {
             int k=-1;
             for (int j = 0; j < v ; j++) {
                 if (mst[j]==false && (k==-1 || key[j]<key[k])){
-                    k=i;
+                    k=j;
                 }
             }
             mst[k]=true;
