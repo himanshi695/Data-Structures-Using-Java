@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class TripletsWithSumZero {
     public boolean findTriplets(int arr[] , int n)
     {
